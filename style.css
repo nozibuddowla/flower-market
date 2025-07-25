@@ -52,14 +52,14 @@
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-    .navbar {
+    .navbar, .banner {
         max-width: 967px;
         margin: 26px auto;
     }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-    .navbar {
+    .navbar, .banner {
         max-width: 740px;
         margin: 26px auto;
     }
@@ -76,6 +76,7 @@
     .navbar {
         max-width: 361px;
         padding: 0.813rem 0;
+        margin: 21px auto;
     }
     .nav-links li:not(:last-child) {
         display: none;
@@ -97,32 +98,160 @@
     align-items: flex-end;
 }
 
-.banner > .banner-content > .banner-title {
+.banner-title {
     font-size: 4.063rem;
     font-weight: 700;
     margin-bottom: 0.813rem;
 }
 
-.banner > .banner-content > .banner-title .orange-text {
+.orange-text {
     color: #E95A08;
 }
 
-.banner > .banner-content > .banner-description {
+.banner-description, .section-subtitle {
     font-size: 1.375rem;
     color: rgba(0, 0, 0, 0.5);
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .banner {
+        max-width: 967px;
+        margin: 26px auto;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .banner {
+        max-width: 740px;
+        margin: 26px auto;
+    }
 }
 
 @media (max-width: 767px) {
     .banner{
         flex-direction: column-reverse;
-        text-align: left;
     }
-    .banner > .banner-content > .banner-title {
+    .banner-content {
+        margin: 0px 1rem;
+    }
+    .banner-title {
         font-size: 1.5rem;
         margin-top: 1.75rem;
         margin-bottom: 0.813rem;
     }
-.banner > .banner-content > .banner-description {
+    .banner-description {
         font-size: 0.875rem;
+    }
+    .banner-image {
+        text-align: right;
+    }
+}
+
+
+/* — Plants Section — */
+.plants {
+    max-width: 1140px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.plants-header {
+    margin-bottom: 3.063rem;
+}
+
+.section-title {
+    font-size: 3.125rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.section-subtitle {
+    max-width: 888px;
+    margin-left: 7.875rem;
+    margin-right: 7.875rem;
+}
+
+/* Grid of cards */
+.plants-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.25rem;
+}
+
+.plant-card img {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.plant-name {
+    font-weight: 500;
+    font-size: 1.375rem;
+    margin-bottom: 1.25rem;
+    color: #111111;
+    line-height: 150%;
+}
+
+.plant-price {
+    font-size: 1.375rem;
+    font-weight: 700;
+    color: #111111;
+    margin-bottom: 1.875rem;
+    line-height: 150%;
+}
+
+.add-cart-btn {
+    background-color: #E95A08;
+    color: #fff;
+    border: none;
+    padding: 1.188rem 5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .plants {
+        max-width: 967px;
+        margin: 26px auto;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .plants {
+        max-width: 740px;
+        margin: 26px auto;
+    }
+}
+
+@media (max-width: 767px) {
+    .plants-grid {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0px 0.938rem;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+    .section-subtitle {
+        max-width: 336px;
+        font-size: 0.875rem;
+        margin-top: 1rem;
+        margin-left: 1.781rem;
+        margin-right: 1.781rem;
+    }
+    .plant-card img {
+        margin-bottom: 1.875rem;
+    }
+    .plant-name {
+        font-size: 1rem;
+        margin-bottom: 0.625rem;
+    }
+    .plant-price {
+        font-size: 1rem;
+    }
+    .add-cart-btn {
+        font-size: 1rem;   
+        padding: 1.188rem 1rem;
     }
 }
