@@ -125,6 +125,11 @@
         max-width: 740px;
         margin: 26px auto;
     }
+    .banner-img {
+        max-width: 100%;
+        width: 100%;
+        margin: 0 auto;
+    }
 }
 
 @media (max-width: 767px) {
@@ -167,8 +172,7 @@
 
 .section-subtitle {
     max-width: 888px;
-    margin-left: 7.875rem;
-    margin-right: 7.875rem;
+    margin: 0 auto;
 }
 
 /* Grid of cards */
@@ -221,6 +225,9 @@
     .plants {
         max-width: 740px;
         margin: 26px auto;
+    }
+    .section-title {
+        font-size: 1.8rem;
     }
 }
 
@@ -299,6 +306,46 @@
     margin-top: 1.25rem;
 }
 
+@media (min-width: 992px) and (max-width: 1199px) {
+    .plant-lover {
+        max-width: 967px;
+        margin: 26px auto;
+    }
+    .plant-lover-img-wrapper img {
+        width: 100%;
+    }
+    .plant-lover-content {
+        width: 100%;
+    }
+    .plant-benefits {
+        font-size: 0.875rem;
+        padding-left: 1.25rem;
+    }
+    .trusted-badge {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .plant-lover {
+        max-width: 740px;
+        margin: 26px auto;
+    }
+    .plant-lover-img-wrapper img {
+        width: 100%;
+    }
+    .plant-lover-content {
+        width: 100%;
+    }
+    .plant-benefits {
+        font-size: 0.875rem;
+        padding-left: 1.25rem;
+    }
+    .trusted-badge {
+        display: none;
+    }
+}
+
 @media (max-width: 767px) {
     .plant-lover {
         flex-direction: column;
@@ -316,5 +363,80 @@
     }
     .trusted-badge {
         display: none;
+    }
+}
+
+.join {
+    background-image: url('./assets/news-letter-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 12.438rem 19.063rem 12.063rem;
+    text-align: center;
+    position: relative;
+}
+
+.join-title {
+    font-size: 3.125rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 1.438rem;
+}
+
+.join-form  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 650px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.join-input {
+    flex: 1;
+    font-size: 1rem;
+    padding: 0.969rem 1.25rem;
+    border: none;
+    outline: none;
+}
+
+.join-btn {
+    background-color: #E95A08;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 1.1rem 3.344rem;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 998px) and (min-width: 767px) {
+    .join {
+        padding: 6.906rem 4.031rem 2.25rem;
+    }
+    .join-form {
+        max-width: 550px;
+    }
+    .join-btn {
+        padding: 0.969rem 0.75rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .join {
+        padding: 6.906rem 4.031rem 2.25rem;
+    }
+    .join-title {
+        font-size: 1.25rem;
+    }
+    .join-form  {
+        max-width: 320px;
+    }
+    .join-input,
+    .join-button {
+        width: 100%;
+    }
+    .join-btn{
+        padding: 0.969rem 0.75rem;
     }
 }
