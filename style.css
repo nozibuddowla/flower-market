@@ -577,6 +577,10 @@
     margin-bottom: 40px;
 }
 
+.deal-card {
+    margin-bottom: 20px;
+}
+
 #bloom, #ana, #zabo {
     background-size: cover;
     background-repeat: no-repeat;
@@ -643,6 +647,11 @@
         gap: 1.5rem;
         margin-bottom: 120px;
     }
+
+    .deal-card {
+        margin-bottom: 0px;
+    }
+
     .deal-card:nth-child(1) {
         grid-column: 1 / 2;
         grid-row: 1 / 2;
