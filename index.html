@@ -136,8 +136,6 @@
                     </div>
             </div>
         </section>
-        
-
         <section class="join">
             <h2 class="join-title noto-serif-regular">Join the colorful Bunch</h2>
             <form class="join-form">
@@ -174,5 +172,14 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        let add_cart_btn = document.querySelectorAll(".add-cart-btn");
+        add_cart_btn.forEach(button => {
+            button.addEventListener("click", () => {
+                alert("Flower Added to Cart!")
+            })
+        })
+    </script>
 </body>
 </html>
